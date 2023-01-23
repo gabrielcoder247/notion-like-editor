@@ -8,7 +8,7 @@ import {BsThreeDotsVertical} from 'react-icons/bs'
 
 function App() {
   return (
-    <div className=" w-[60%] mx-auto p-8">
+    <div className="Logo">
       <div className="flex justify-between border-2 shadow-sm rounded p-2 gap-10 font-thin text-gray-400">
       <div className="flex gap-8">
         <p className="bg-green-200 w-[20px] px-[4px] rounded">P</p>
