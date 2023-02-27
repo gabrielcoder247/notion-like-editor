@@ -81,7 +81,7 @@ class EditableBlock extends React.Component {
         ref: this.contentEditable.current
       });
     }
-    // Store the key to detect combinations like "Shift-Enter" later on
+
     this.setState({ previousKey: e.key });
   }
 
@@ -113,8 +113,6 @@ class EditableBlock extends React.Component {
     document.removeEventListener("click", this.closeSelectMenuHandler);
   }
 
-  // Restore the clean html (without the command), focus the editable
-  // with the caret being set to the end, close the select menu
   tagSelectionHandler(tag) {
     this.setState({ tag: tag, html: this.state.htmlBackup }, () => {
       setCaretToEnd(this.contentEditable.current);
